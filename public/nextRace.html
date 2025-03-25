@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Next Race Timer</title>
+        <link rel="stylesheet" type="text/css" href="./races.css">
+    </head>
+    <body>
+        <section id="mainWrap">
+            <div id="mainContainer">
+                <h1>The Next Race is:</h1>
+                <div id="contentContainer">
+                    <h2 id="raceName"></h2>
+                    <span id="circuit"></span>
+                    <p id="weekendDate"></p>
+                    <span class="timer">Time Till Main Race:</span>
+                    <p id="timer"></p>
+                    <form id="form">
+                        <p>Subscribe to Notifications:</p>
+                        <div id="inputsContainer">
+                            <input type="email" id="email" placeholder="Email" required><br>
+                            <div id="radioSection">
+                                <input type="radio" name="subscription" value="oneRace" class="radio" required> This race<br>
+                                <input type="radio" name="subscription" value="allRaces" class="radio" required> All the races of the season<br>
+                            </div>
+                            
+                        </div>
+                        <div class="buttons">
+                            <button id="toCalendar" class="button">View Season Calendar</button>
+                            <button type="submit" class="button">Subscribe</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <script src="nextRace.js"></script>
+    </body>
+</html>

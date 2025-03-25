@@ -1,0 +1,255 @@
+body {
+    margin: 0;
+}
+
+#mainWrap {
+    width: 100%;
+    height: 100vh;
+    background-image: url('./resources/images/backgroundImg.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'F1Font', sans-serif;
+
+}
+
+#mainWrapCalendar {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('./resources/images/backgroundImg.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'F1Font', sans-serif;
+}
+
+#mainContainer {
+    width: 45%;
+    padding: 2em 2em;
+    text-align: center;
+    background-color: rgba(3, 3, 3, 0.8);
+    color: white;
+    text-shadow: 0.02em 0.03em 0em black;
+    font-weight: bold;
+}
+
+#allRacesTitle {
+    color: white;
+}
+
+.raceContainer div.info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+}
+
+
+
+#mainContainerCalendar {
+    width: 60%;
+    padding: 2em 2em;
+    text-align: center;
+    background-color: rgba(3, 3, 3, 0.8);
+    text-shadow: 0.02em 0.03em 0em black;
+    font-weight: bold;
+}
+
+#contentContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin:0;
+    font-size: 1.4em;
+}
+
+h2 {
+    width:60%;
+    margin: 0.3em 0em;
+    color: darkred;
+    background-color: white;
+    text-shadow: 0.02em 0.03em 0em black;
+    font-size: 1.8em;
+}
+
+#circuit {
+    font-size: 0.9em;
+}
+
+#weekendDate {
+    border-bottom: 1.5px solid darkred;
+}
+
+.timer {
+    padding-bottom: 0.5em;
+    font-size: 0.9em;
+}
+
+#timer {
+    width: 60%;
+    margin: 0;
+    background-color: darkred;
+    text-shadow: 0.02em 0.03em 0em black;
+    font-size: 1.8em;
+}
+
+#form {
+    width: 60%;
+}
+
+#form p {
+    margin: 0;
+    padding: 1.5em 0 0.5em 0;
+}
+
+#inputsContainer {
+    height: 110px;
+}
+
+.subscribed {
+    display: block;
+    color: green;
+    padding-top: 25px;
+    font-size: 1.2em;
+}
+
+#email {
+    width: 100%;
+    height: 2em;
+    margin: 0;
+    border: none;
+    border-bottom: 2.5px solid darkred;
+    font-size: 1em;
+}
+
+#radioSection {
+    text-align: start;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    accent-color: darkred;
+    font-size: 0.9em;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.button {
+    padding: 0.5em 0.8em;
+    border: none;
+    font-family: 'F1Font', sans-serif;
+    font-weight: bold;
+    border-bottom: 2.5px solid darkred;
+}
+
+.button:hover {
+    color: white;
+    background-color: darkred;
+    font-weight: bold;
+    border: none;
+}
+
+#calendar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1em;
+}
+
+#allRaces {
+    width: 100%;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 1em;
+}
+
+.raceContainer {
+    display: flex;
+    align-items: center;
+    height: 80px;
+    background-color: white;
+}
+
+.raceContainer div {
+    padding: 0 0.8em;
+    height: 100%;
+}
+
+.number {
+    color: white;
+    background-color: darkred;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 26px;
+}
+
+.raceContainer div.flag {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.raceContainer div.countryContainer {
+    display: flex;
+    align-items: center;
+    padding: 0;
+}
+
+.flagImg {
+    border: 1px solid black;
+    height: 15px;
+    width: 20px;
+    margin-right: 5px;
+}
+
+
+.info p {
+    margin: 0;
+    text-align: left;
+}
+
+.date {
+    font-weight: normal;
+    font-size: 0.8em;
+}
+
+.country {
+    color: darkred;
+}
+
+.location {
+    font-size: 0.7em;
+}
+
+#goBack:hover {
+    border-bottom: 2.5px solid darkred;
+}
+
+@font-face {
+    font-family: 'F1Font';
+    src: url('./resources/fonts/Formula1-Regular-1.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+};
+
+@media (max-width: 750px) {
+    #allRaces {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Small screens: 1 column */
+@media (max-width: 1100px) {
+    #allRaces {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
