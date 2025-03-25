@@ -1,0 +1,24 @@
+{
+  "name": "hackathon2",
+  "version": "1.0.0",
+  "description": "formula1 race calendar",
+  "homepage": "https://github.com/amayakew/hackathon2#readme",
+  "bugs": {
+    "url": "https://github.com/amayakew/hackathon2/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amayakew/hackathon2.git"
+  },
+  "license": "ISC",
+  "author": "Anastasiya Maistsiapanava",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  }
+}
