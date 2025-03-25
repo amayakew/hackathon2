@@ -12,7 +12,7 @@ My project displays a countdown to the next F1 race, allows users to subscribe a
 To run this project on your computer:
 1. Make sure all the packages are installed (npm i)
 2. Create .env file in the root of the project with the following variables:
-* BREVO_SENDER = <sender email address>
-* BREVO_API = <you can ask me for mine>
+* BREVO_SENDER = sender email address
+* BREVO_API = you can ask me for mine
 
 3. **Start server.js using Node :)**
